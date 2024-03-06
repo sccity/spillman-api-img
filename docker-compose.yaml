@@ -1,0 +1,13 @@
+version: '3'
+services:
+  spillman-api-img:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: spillman-api/image-server:spillman-api
+    container_name: image-server
+    ports:
+      - "8080:5000"
+    volumes:
+      - "$PWD/config:/app/config:ro"
+    restart: unless-stopped
