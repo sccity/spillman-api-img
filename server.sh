@@ -25,6 +25,9 @@ elif [[ $1 = "update" ]]; then
 	echo "Updating Spillman API Image Server..."
 	$docker_compose down --remove-orphans
 	git pull origin prod
+elif [[ $1 = "shell" ]]; then
+	echo "Entering Spillman API Image Server Shell..."
+	docker exec -it spillman-api-image sh
 else
 	echo "Unkown or missing command..."
 fi
