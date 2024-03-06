@@ -7,15 +7,15 @@ The Spillman API Image Server is designed to work with the Spillman API to serve
 *  All the requirements for Spillman API
 *  Docker
 
-## INSTALL
+## INSTALL/RUN
 ```
-git clone https://github.com/sccity/spillman-api.git
-python3 -m venv venv && source venv/bin/activate\
-pip install -r requirements.txt
+cd /opt
+git clone https://github.com/sccity/spillman-api-img.git
+./server.sh start
 ```
 
 ## SETTINGS
-In the settings.yaml file you will notice there are database settings. The database settings are for tokens and audit trail data.
+In the settings.yaml file you will notice there are database settings. The database settings are for tokens and audit trail data. This should be set as the same settings for the Spillman API
 
 ## LICENSE
 Copyright (c) Santa Clara City UT\
