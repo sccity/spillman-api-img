@@ -21,6 +21,7 @@ cd spillman-api-img
 **Edit your settings as described below.**
 ```
 sudo ./server.sh start
+```
 
 ## BASIC COMMANDS
 
