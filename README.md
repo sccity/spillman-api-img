@@ -1,48 +1,65 @@
-# Spillman API Image Server Image Server 
+# Spillman API Image Server
 
-The Spillman API Image Server Image Server is designed to work with the Spillman API Image Server to serve images securely using the authentication built into the Spillman API Image Server.
+The Spillman API Image Server is designed to work with the [Spillman API](https://github.com/sccity/spillman-api) to serve images securely using the authentication built into the Spillman API.
 
 ## REQUIREMENTS
 *  Spillman server with proper access rights (must be installed on the Spillman Server)
-*  All the requirements for Spillman API Image Server
+*  All the requirements for [Spillman API](https://github.com/sccity/spillman-api?tab=readme-ov-file#requirements)
 *  Docker & Docker Compose
 
 ## INSTALL
-We highly recommend people use docker for running the Spillman API Image Server, whether you are on Windows, macOS or Linux. This assumes you have Docker and Docker Compose already installed.
+We highly recommend people use docker for running the Spillman API Image Server, whether you are on Windows, macOS or Linux. This assumes you have Docker and Docker Compose already installed. You may have to change the port configuration in docker-compose.yaml. Right now it is set to run on 8080, but you can change to any port that is open. You will also need to change "$PWD/config" to the folder that stores images for Spillman.
 ```
 cd /opt
-git clone https://github.com/sccity/spillman-api-img.git
-cd spillman-api-img
-./server.sh start
 ```
+```
+sudo git clone https://github.com/sccity/spillman-api-img.git
+```
+```
+cd spillman-api-img
+```
+**Edit your settings as described below.**
+```
+sudo ./server.sh start
 
 ## BASIC COMMANDS
+
+Start the Spillman API Image Server
 ```
-# Start the Spillman API Image Server
-$ ./server.sh start
+sudo ./server.sh start
+```
 
-# Restart Spillman API Image Server (useful if things get stuck)
-$ ./server.sh restart
+Restart Spillman API Image Server (useful if things get stuck)
+```
+sudo ./server.sh restart
+```
 
-# Stop the Spillman API Image Server server (temporarily)
-$ ./server.sh stop
+Stop the Spillman API Image Server server (temporarily)
+```
+sudo ./server.sh stop
+```
 
-# Halt the Spillman API Image Server server
-$ ./server.sh down
+Halt the Spillman API Image Server server
+```
+sudo ./server.sh down
+```
 
-# Update everything to the latest version
-$ ./server.sh update
+Update everything to the latest version
+```
+sudo ./server.sh update
+```
 
-# Rebuild everything from scratch
-$ ./server.sh rebuild
+Rebuild everything from scratch
+```
+sudo ./server.sh rebuild
 ```
 
 ## SETTINGS
-In the settings.yaml file you will notice there are database settings. The database settings are for tokens and audit trail data. This should be set as the same settings for the Spillman API Image Server
+In the config/settings.yaml file you will notice there are database settings. The database settings are for tokens and audit trail data. This should be set as the same settings for the Spillman API Image Server Image Server
 
 ## LICENSE
 Copyright (c) Santa Clara City UT\
-Developed for Sanata Clara - Ivins Fire & Rescue
+Developed for Santa Clara - Ivins Fire & Rescue
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
