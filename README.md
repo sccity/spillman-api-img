@@ -11,6 +11,9 @@ The Spillman API Image Server is designed to work with the Spillman API to serve
 ```
 cd /opt
 git clone https://github.com/sccity/spillman-api-img.git
+```
+Edit the docker-compose.yaml file and change $PWD/config to the location of your images. Leave unchanged to test with test.png/test.jpg.
+```
 ./server.sh start
 ```
 
