@@ -16,7 +16,7 @@ cd spillman-api-img
 ./server.sh start
 ```
 
-##BASIC COMMANDS
+## BASIC COMMANDS
 ```
 # Start the Spillman API Image Server
 $ ./server.sh start
