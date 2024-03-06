@@ -5,7 +5,7 @@ The Spillman API Image Server is designed to work with the Spillman API to serve
 ## REQUIREMENTS
 *  Spillman server with proper access rights (must be installed on the Spillman Server)
 *  All the requirements for Spillman API
-*  Docker
+*  Docker & Docker Compose
 
 ## INSTALL/RUN
 ```
