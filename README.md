@@ -1,4 +1,4 @@
-# Spillman API Image Server
+# Spillman API Image Server [![CircleCI](https://dl.circleci.com/status-badge/img/gh/sccity/spillman-api-img/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/sccity/spillman-api-img/tree/master) [![Codacy Badge](https://app.codacy.com/project/badge/Grade/a45ad698a70240778adce56adfd55b67)](https://app.codacy.com/gh/sccity/spillman-api-img/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 
 The Spillman API Image Server is designed to work with the [Spillman API](https://github.com/sccity/spillman-api) to serve images securely using the authentication built into the Spillman API.
 
