@@ -55,9 +55,6 @@ Rebuild everything from scratch
 sudo ./server.sh rebuild
 ```
 
-## SETTINGS
-In the config/settings.yaml file you will notice there are database settings. The database settings are for tokens and audit trail data. This should be set as the same settings for the Spillman API Image Server Image Server
-
 ## LICENSE
 Copyright (c) Santa Clara City UT\
 Developed for Santa Clara - Ivins Fire & Rescue
