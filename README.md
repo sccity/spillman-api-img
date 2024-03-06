@@ -1,24 +1,44 @@
-# Spillman API Image Server 
+# Spillman API Image Server Image Server 
 
-The Spillman API Image Server is designed to work with the Spillman API to serve images securely using the authentication built into the Spillman API.
+The Spillman API Image Server Image Server is designed to work with the Spillman API Image Server to serve images securely using the authentication built into the Spillman API Image Server.
 
 ## REQUIREMENTS
 *  Spillman server with proper access rights (must be installed on the Spillman Server)
-*  All the requirements for Spillman API
+*  All the requirements for Spillman API Image Server
 *  Docker & Docker Compose
 
-## INSTALL/RUN
+## INSTALL
+We highly recommend people use docker for running the Spillman API Image Server, whether you are on Windows, macOS or Linux. This assumes you have Docker and Docker Compose already installed.
 ```
 cd /opt
 git clone https://github.com/sccity/spillman-api-img.git
-```
-Edit the docker-compose.yaml file and change $PWD/config to the location of your images. Leave unchanged to test with test.png/test.jpg. You will also need to edit the settings.yaml file with database settings.
-```
+cd spillman-api-img
 ./server.sh start
 ```
 
+##BASIC COMMANDS
+```
+# Start the Spillman API Image Server
+$ ./server.sh start
+
+# Restart Spillman API Image Server (useful if things get stuck)
+$ ./server.sh restart
+
+# Stop the Spillman API Image Server server (temporarily)
+$ ./server.sh stop
+
+# Halt the Spillman API Image Server server
+$ ./server.sh down
+
+# Update everything to the latest version
+$ ./server.sh update
+
+# Rebuild everything from scratch
+$ ./server.sh rebuild
+```
+
 ## SETTINGS
-In the settings.yaml file you will notice there are database settings. The database settings are for tokens and audit trail data. This should be set as the same settings for the Spillman API
+In the settings.yaml file you will notice there are database settings. The database settings are for tokens and audit trail data. This should be set as the same settings for the Spillman API Image Server
 
 ## LICENSE
 Copyright (c) Santa Clara City UT\
